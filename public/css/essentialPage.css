@@ -1,0 +1,46 @@
+.title-essential{
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    color: #75887d;
+}
+
+.essential-text{
+    color: #75887d;
+    font-weight: 700;
+}
+
+.btnBuy-essential a{
+    font-size: 1.5rem;
+    border: 1px solid #75887d;;
+    padding: 1.1rem 1rem;
+    width: 60%;
+    border-radius: 20px;
+    color: #75887d;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+.btnBuy-essential a:hover{
+    border: none;
+
+}
+.btnBuy-essential a:active{
+    background-color: #75887d;
+}
+/*ESSENTIAL DESCRIPCION*/
+
+.essentialPage{
+    width: 100%;
+    background-color: #77897f;
+}
+
+.essential_grid{
+    color: #0b353f;
+}
+
+@media (min-width:780px) { 
+    .essential_grid{
+        width: 60%;
+        display: grid;
+        grid-row: 30% 70%;
+    }
+}

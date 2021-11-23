@@ -1,0 +1,316 @@
+:root {
+    --primario: #066536;
+    --blanco: #F6F6F6;
+    --negro: #000000;
+    --celeste:#D5E7EA;
+    --secundarioOscuro:#035555;
+    --secundario:#049c9c;
+    --verdeOscuro:#0a313a;
+}
+/*ABOUT US*/
+
+.aboutUs{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(246, 246, 246) 0%, rgb(246, 246, 246) 52%, rgb(246, 246, 246) 100%);
+}
+
+.about{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.about_contenedor{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contenedor_text{
+    margin: 2rem 0;
+}
+.contenedor_text h1{
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: var(--secundarioOscuro);
+}
+.contenedor_text span{
+    color: var(--secundario);
+}
+
+.contenedor_text p{
+    max-width: 430px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--negro);
+}
+.contenedor_img{
+    min-width:400px;
+}
+@media (min-width:768px) { 
+    .about_contenedor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contenedor_text{
+        text-align: left;
+    }
+}
+
+/*ABOUT 2*/
+.about2{
+    width: 90%;
+    margin: 2rem auto;
+}
+.about2_contenedor{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about2_img{
+    width: 35rem;
+    height: 35rem;
+     border-radius: 50%;
+     overflow: hidden;
+}
+.about2_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about2_text h2{
+    font-size: 1.7rem;
+    color: var(--verdeOscuro);
+    font-weight: 800;
+}
+.about2_text p{
+    font-size: 1.4rem;
+    color: var(--verdeOscuro);
+    font-weight: 400;
+}
+
+@media (min-width:768px) { 
+    .about2_contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+    }
+    .about2_img{
+        width: 35rem;
+        height: 35rem;
+         border-radius: 50%;
+         overflow: hidden;
+    }
+    .about2_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about2_text{
+        text-align: left;
+    }
+}
+
+/*Nuestro Desafio*/
+
+.bannerDesafio{
+    width: 100%;
+    height: 15rem;
+    margin: 15rem 0 0 0;
+    background: rgb(10,49,58);
+    background: linear-gradient(90deg, rgba(10,49,58,1) 0%, rgba(3,85,85,1) 40%, rgba(4,156,156,1) 100%);
+
+}
+.bannerDesafio_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerDesafio_contenedor h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blanco);
+    font-weight: 900;
+    text-shadow: 2px 2px 1px rgba(255,255,255,0.6);
+    margin: 6rem;
+    position: relative;
+}
+@media (min-width:768px) { 
+    .bannerDesafio_contenedor h3{
+        font-size: 3.2rem;
+    }
+}
+
+.about3{
+    width: 100%;
+    background-image: url(/public/img/trama\ premium\ 2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+}
+
+.about3 h4{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--verdeOscuro);
+    font-weight: bold;
+    margin: 8rem 0;
+}
+
+.about3_tecnologias{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 4rem auto;
+}
+
+.tecnologias_contenido{
+    width: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+.tecnologia_img{
+    width: 6rem;
+    height: 6rem;
+    padding: .5rem;
+    border: 2px solid var(--verdeOscuro);
+    border-radius:50px;
+    overflow: hidden;
+}
+.tecnologia_img img{
+    width: 100%;
+    height: 100%;
+}
+.tecnologias_contenido p{
+    font-size: 1.3rem;
+    color: var(--verdeOscuro);
+    font-weight: 700;
+    text-align: center;
+}
+@media (min-width:768px) { 
+    .about3_tecnologias{
+        width: 70%;
+        margin: 0 auto 10rem auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .tecnologias_contenido{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tecnologias_contenido p{
+        width: 90%;
+    }
+}
+
+.about3_info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.about3_banner1{
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner1_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner1_contenedor img{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+}
+.banner1_contenedor h4{
+    margin: 1rem;
+    text-align: center;
+    color: var(--primario);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.banner1_contenedor p{
+    text-align: center;
+    color: var(--negro);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.about3_banner2{
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.about3_banner2 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:768px) { 
+    .about3_info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+
+        margin-bottom: 10rem;
+    }
+    .about3_banner1{
+        height: 85%;
+        width: 100%;
+        padding: 2rem;
+        z-index: 0;
+    }
+    .banner1_contenedor h4{
+        margin: 1rem 0 1rem 0;
+        text-align: left;
+        font-size: 2rem;
+    }
+    .banner1_contenedor p{
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+    .banner1_contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+    }
+    .about3_banner2{
+        margin:8rem 0 0 0;
+        height: 80%;
+        width: 100%;
+        z-index: 1;
+        margin-left: -4rem;
+    }
+}
