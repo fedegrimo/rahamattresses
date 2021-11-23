@@ -1,24 +1,46 @@
-const ENDPOINTS = require ('./endpoint');
-const PAGES_CTRL = require ('./controllers/pages_ctrl');
+// ************ Require's ************
+const createError = require('http-errors');
+const cookieParser = require('cookie-parser');
+const path = require("path");
 const express = require("express");
-const app = express();
-const startServer = require('./config_app');
+const logger = require('morgan');
+const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
 
-const port = process.env.PORT ||  3000;
+// ************ express() - (don't touch) ************
+const server = express();
 
-app.use("/css",express.static("public/css"));
-app.use("/images",express.static("public/img"));
-
-app.get(ENDPOINTS.INDEX,PAGES_CTRL.index);
-
-app.get(ENDPOINTS.ABOUT,PAGES_CTRL.about);
-
-app.get(ENDPOINTS.BALANCE,PAGES_CTRL.balance);
-
-app.get(ENDPOINTS.ESSENTIAL,PAGES_CTRL.essential);
-
-app.get(ENDPOINTS.WELLNESS,PAGES_CTRL.wellness);
+const PORT = process.env.PORT || 3000;
 
 
+// ************ Middlewares - (don't touch) ************
+server.use(express.static(path.join(__dirname, 'public')));  // Necesario para los archivos estáticos en el folder /public
+server.use(express.urlencoded({ extended: false }));
+server.use(logger('dev'));
+server.use(express.json());
+server.use(cookieParser());
+server.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 
-startServer(app,port);
+
+// ************ Template Engine - (don't touch) ************
+server.set("view engine", "ejs");
+server.set("views", path.resolve(__dirname, "views"));
+
+// ************ FOLDERS LIBRARY ************
+server.use('/css',express.static(path.resolve(__dirname,'public/css')));
+server.use('/images',express.static(path.resolve(__dirname,'public/img')));
+server.use('/js',express.static(path.resolve(__dirname,'public/js')));
+
+// ************ WRITE YOUR CODE FROM HERE ************
+// ************ Route System require and use() ************
+
+const mainRouter = require('./src/routes/main'); // Rutas main
+
+server.use('/', mainRouter);
+
+// ************ DON'T TOUCH FROM HERE ************
+// ************ catch 404 and forward to error handler ************
+server.use((req, res, next) => next(createError(404)));
+
+server.listen(PORT,()=>{
+    console.log(`Servidor iniciado en puerto ${PORT}`);
+});

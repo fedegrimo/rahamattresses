@@ -1,57 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
-    <link rel="stylesheet" href="/css/app.css">
-    <script src="app.js"></script>
-    <title>Raha</title>
-</head>
+<html lang="es">
+    <%- include('./layout/head') %>
 
 <body>
-    <div class="barraTop">
-        <div class="barraTop_contenedor">
-            <span class="barraTop_texto">COMPRA AHORA EN AMAZON // WALMART</span>
-        
-        
-            <ul class="barraTop_idiomas">
-                <li><a>EN| </a></li>
-                <li><a>ES| </a></li>
-                <li><a>POR</a></li>
-            </ul>
-         </div>
-    </div>
-
-    <header class="header">
-
-        <div class="header__contenedor">
-            <div class="header_logo">
-                <a href="/"><img src="/images/logo.svg" alt="Logo Raha"></a>
-            </div>
-            <div class="hamburger" id="hamburger"> 
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="header_nav">
-                <ul class="nav_item">
-                    <li><a href="/#colchones">COLCHONES</a></li>
-                    <li><a href="/#basesEco">BASES</a></li>
-                    <li><a href="/#colchones">INNOVACIÓN</a></li>
-                    <li><a href="/about">QUIENES SOMOS</a></li>
-                </ul>
-            </nav>
-
-            <div class="header_redes">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>    
-    </header>   
+    <%- include('./layout/header') %>
 
 
     <main class="wellnessPage">
@@ -61,16 +13,15 @@
             <div class="store_contenedor">
 
                 <div class="store_img">
-                    <img src="/images/situacion_basic(1).png" alt="colchón balance">
+                    <img src="/images/situacion_premium.png" alt="colchón wellness">
                 </div>
 
                 <div class="store_contenido">
 
                    <div class="contenido_info">
-                        <div class="store_nav"><a href="#">HOME /</a><a href="#">COLCHONES /</a><a href="#">RAHA essential</a></div>
-                        <h1 class="store_title title-essential">raha essential</h1>
+                        <div class="store_nav"><a href="#">HOME /</a><a href="#">COLCHONES /</a><a href="#">RAHA WELLNESS</a></div>
+                        <h1 class="store_title">raha wellness</h1>
                         <div class="review">
-                    
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -78,7 +29,7 @@
                             <i class="fas fa-star-half-alt"></i>
                             <span>4.5 (1234 Reseñas)</span>
                         </div>
-                        <p class="store_text essential-text">Acá una breve descripción general del colchón consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua</p>
+                        <p class="store_text">Acá una breve descripción general del colchón consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua</p>
                         <div class="selectores">
                             <div class="selector1">
                                 <span>ALTURA</span>
@@ -100,7 +51,7 @@
                             </div>
                         </div>
 
-                        <div class="btnBuy btnBuy-essential">
+                        <div class="btnBuy">
                             <a href="#">COMPRAR AHORA</a>
                         </div>
                     </div>
@@ -136,23 +87,23 @@
 
         </section>
 
-        <section class="essentialPage">
+        <section class="wellness">
 
-            <div class="balance_contenedor">
+            <div class="welness_contenedor">
                 
-                <div class="balance_img">
-                    <img src="/images/altura_basic.png" alt="">
+                <div class="welness_img">
+                    <img src="/images/mano_premium.png" alt="">
                 </div>
                 
-                <div class="essential_grid">
+                <div class="welness_grid">
 
-                    <div class="balance_title">
+                    <div class="welness_title">
                         <h4 >Aca una breve descripción del colchón orientada a la experiencia, por qué lo pensaron con las características que tiene.</h4> 
                     </div>
 
-                    <div class="balance_items">
+                    <div class="welness_items">
                     
-                        <div class="balance_item">
+                        <div class="welness_item">
                             <div class="item_img">
                                 <img src="/images/icons/hand.png" alt="">
                             </div>
@@ -174,15 +125,34 @@
 
                         <div class="balance_item">
                             <div class="item_img">
-                                <img src="/images/icons/hilo.png" alt="">
+                                <img src="/images/icons/estrellas.png" alt="">
                             </div>
                             <div class="item_contenido">
-                                <h5>TEJIDO DE PUNTO</h5>
-                                <span>Hilos de origen natural entrelazados de manera horizontal y vertical que facilitan la circulación de aire.</span>
+                                <h5>PUROTEX®</h5>
+                                <span>Reduce en un 93,7 % la cantidad de alérgenos de ácaros.</span>
                             </div>
                         </div>
 
-                    </div>
+                        <div class="balance_item">
+                            <div class="item_img">
+                                <img src="/images/icons/ecology.png" alt="">
+                            </div>
+                            <div class="item_contenido">
+                                <h5>TENCEL™</h5>
+                                <span>Tela orgánica que brinda frescura y protección.</span>
+                            </div>
+                        </div>
+
+                        <div class="balance_item">
+                            <div class="item_img">
+                                <img src="/images/icons/fabric.png" alt="">
+                            </div>
+                            <div class="item_contenido">
+                                <h5>ADAPTIVE®</h5>
+                                <span>Con respuesta dinámica generando un ambiente fresco y seco.</span>
+                            </div>
+                        </div>
+                   </div>
                     
                 </div>
 
@@ -215,15 +185,5 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer_contenedor">
-            <div class="contenedor_texto">
-            <p>¡Suscribite para enterarte de las actualizaciones y<br> obtener descuentos en nuestros productos!</p>
-            </div>
-            <div class="contenedor_email">
-                <input class="email" type="email">
-                <input class="submit" type="submit" value="sing up">
-            </div>
-        </div>
-    </footer>
+    <%- include('./layout/footer') %>    
 </body>
