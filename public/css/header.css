@@ -23,6 +23,7 @@ main{
     max-width: 1600px;
     background: rgb(77,125,136);
     background: linear-gradient(0deg, rgba(77,125,136,0.40129555240064774) 0%, rgba(229,251,254,0.4741246840533089) 52%, rgba(255,255,255,0.19681375968356096) 100%);
+   
 }
 
 h1, h2, h3 {
@@ -137,6 +138,12 @@ ul{
         align-items: center;
         text-decoration: none;
     }
+    .nav_item a:focus{
+        color: #25597b;
+    }
+    .nav_item a:visited{
+        color: #25597b;
+    }
     .nav_item li{
         margin-right: 4rem;
     }
@@ -149,6 +156,12 @@ ul{
     }
     .header_redes a{
         margin-right: 1rem;
+    }
+    .header_redes a:focus{
+        color: #25597b;
+    }
+    .header_redes a:visited{
+        color: #25597b;
     }
     .hamburger{
        display: none;

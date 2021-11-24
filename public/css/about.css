@@ -18,6 +18,7 @@
     width: 100%;
     text-align: center;
     padding: 2rem;
+    position: relative;
 }
 
 .about_contenedor{
@@ -28,7 +29,9 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    
 }
+
 .contenedor_text{
     margin: 2rem 0;
 }
@@ -65,6 +68,39 @@
 .about2{
     width: 90%;
     margin: 2rem auto;
+    overflow: hidden;
+}
+.about2::before{
+    content: '';
+    background-image: url(/img/icons/trama1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    position: absolute;
+    top: 75rem;
+    left: 0rem;
+   
+}
+
+@media (min-width:768px) { 
+    .about2::before{
+        content: '';
+        background-image: url(/img/icons/trama1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 30rem;
+        height: 20rem;
+        display: block;
+        position: absolute;
+        top: 50rem;
+        left: 0rem;
+       
+    }
+   
 }
 .about2_contenedor{
     margin: 0 auto;
@@ -73,12 +109,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    
 }
+
+
 .about2_img{
     width: 35rem;
     height: 35rem;
      border-radius: 50%;
      overflow: hidden;
+     z-index: 1;
 }
 .about2_img img{
     width: 100%;
@@ -102,6 +143,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
+        margin-top: 15rem;
     }
     .about2_img{
         width: 35rem;
@@ -134,25 +176,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.bannerDesafio_contenedor h3{
-    text-align: center;
-    font-size: 2rem;
-    color: var(--blanco);
-    font-weight: 900;
-    text-shadow: 2px 2px 1px rgba(255,255,255,0.6);
-    margin: 6rem;
     position: relative;
 }
+
+.bannerDesafio_contenedor img{
+   width: 100%;
+   height: 100%;
+   margin: 5rem auto;
+}
 @media (min-width:768px) { 
-    .bannerDesafio_contenedor h3{
-        font-size: 3.2rem;
-    }
+    .bannerDesafio_contenedor img{
+        width: 80%;
+        height: 80%;
+        margin: 1rem auto;
+     }
 }
 
 .about3{
     width: 100%;
-    background-image: url(/images/trama_premium-2.png);
+    background-image: url(/img/icons/fondo_somosraha.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,10 +230,9 @@
     margin: 0 2rem;
 }
 .tecnologia_img{
-    width: 6rem;
-    height: 6rem;
+    width: 9rem;
+    height: 9rem;
     padding: .5rem;
-    border: 2px solid var(--verdeOscuro);
     border-radius:50px;
     overflow: hidden;
 }
@@ -205,6 +246,9 @@
     font-weight: 700;
     text-align: center;
 }
+.tecnologias_contenido .memoryFoam{
+   margin: .2rem;
+}
 @media (min-width:768px) { 
     .about3_tecnologias{
         width: 70%;
@@ -217,7 +261,7 @@
         text-align: center;
     }
     .tecnologias_contenido p{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -238,6 +282,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
 .banner1_contenedor{
     display: flex;
@@ -269,6 +316,9 @@
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
 .about3_banner2 img{
     width: 100%;

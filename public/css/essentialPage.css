@@ -1,9 +1,17 @@
 .title-essential{
-    text-transform: capitalize;
+    text-transform: none;
     letter-spacing: 5px;
     color: #75887d;
+    font-weight: 500;
+    
 }
-
+@media (min-width: 768px) { 
+    .title-essential{
+        font-size: 5rem;
+        font-weight: 500;
+        text-transform: none;
+    }
+}
 .essential-text{
     color: #75887d;
     font-weight: 700;
@@ -26,13 +34,29 @@
 .btnBuy-essential a:active{
     background-color: #75887d;
 }
+select:hover{
+    background-color: #ece0ee;
+}
 /*ESSENTIAL DESCRIPCION*/
 
 .essentialPage{
     width: 100%;
-    background-color: #77897f;
+    background: rgb(119,137,126);
+    background: linear-gradient(90deg, rgba(119,137,126,1) 0%, rgba(149,159,155,1) 30%, rgba(227,217,229,1) 100%);
+    position: relative;
+    overflow: hidden;
 }
-
+.essentialPage:before{
+    content: '';
+    background-image:url(/img/icons/trama4.png);
+    width: 49%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
 .essential_grid{
     color: #0b353f;
 }

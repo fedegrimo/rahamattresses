@@ -132,7 +132,68 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    position: relative;
+  z-index: 1;
+}
+.index::before{
+    content: '';
+    background-image: url(/img/icons/trama1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    top: 122rem;
+    left: 0rem;
+   
+}
+.index::after{
+    content: '';
+    transform: rotate(180deg);
+    background-image: url(/img/icons/trama1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    top: 122rem;
+    right: 0rem;
+   z-index: 0;
+}
+@media (min-width:768px) { 
+    .index::before{
+        content: '';
+        background-image: url(/img/icons/trama1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 30rem;
+        height: 20rem;
+        display: block;
+        position: absolute;
+        top: 55rem;
+        left: 0rem;
+       
+    }
+    .index::after{
+        content: '';
+        transform: rotate(180deg);
+        background-image: url(/img/icons/trama1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 30rem;
+        height: 20rem;
+        display: block;
+        position: absolute;
+        top: 55rem;
+        right: 0rem;
+       z-index: 0;
+    }
 }
 .encuenta__cont1{
     width: 100%;
@@ -209,12 +270,12 @@
 .num-relleno{
     font-family: var(--fuentePrincipal);
     color: var(--verdeOscuro);
-    font-size: 15vw;
+    font-size: 14rem;
     -webkit-text-stroke: .5px var(--verdeOscuro);
     color: transparent;
     line-height:1;
     margin-right: -1rem;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .cont2_contenedor{
@@ -245,6 +306,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 2rem;
+        max-width:158px;
     }
     .cont2_contenedor{
         width: 100%;
@@ -260,6 +322,9 @@
         margin: 0;
         margin-top: 3rem;
         margin-right: 1rem;
+    }
+    .numUno{
+        margin-right:1rem;
     }
     .num-relleno:first-child{
         margin-left: -5rem;
@@ -295,7 +360,7 @@
     text-align: center;
     transition: all 300ms ease;
 }
-.principal__titulo1:hover{
+.essential_principal:hover .principal__titulo1{
     -webkit-text-stroke: 0px;
     color: #75887d;
 }
@@ -308,7 +373,7 @@
     text-align: center;
     transition: all 300ms ease;
 }
-.principal__titulo2:hover{
+.essential_principal:hover .principal__titulo2{
     color: #22541a;
 }
 .principal__titulo3{
@@ -319,16 +384,17 @@
     text-align: center;
     transition: all 300ms ease;
 }
-.principal__titulo3:hover{
+.essential_principal:hover .principal__titulo3{
     color: #117e89;
 }
+
 .essential_principal{
     margin: 0 auto;
 }
 
 .essential_contenedor{
     width: 30rem;
-    height: 45rem;
+    height: 49rem;
     margin: 2rem auto;
     background-color: #FAF6FA;
     border-radius: 2rem;
@@ -366,6 +432,9 @@
 .essential_btn{
     margin: 5rem auto;
 }
+.wellness_btn{
+    margin: 2.5rem auto;
+}
 .btn4{
     font-size: 1.5rem;
     margin: 0 auto;
@@ -377,9 +446,20 @@
     text-align: center;
     cursor: pointer;
 }
-
-
-
+.essential_principal:hover .btn4{
+    border: none;
+    background-color: #75887d;
+    color: #ebdcd8;
+}
+ .btn4:active{
+    background-color: #22541a;
+ }
+ .essential_principal:hover .btn4balance{
+     background-color: #22541a;
+ }
+ .essential_principal:hover .btn4welness{
+     background-color: #117e89;;
+ }
 @media (min-width:1200px) { 
     .essential{
         display: grid;
@@ -612,6 +692,7 @@
  }
  .correccion{
      width: 22rem;
+     padding: 1rem;
  }
  .correccion2{
     width: 13rem;
@@ -670,9 +751,9 @@
      height: 50rem;
      padding: 1rem;
      margin: 0 auto;
-     background-image: url(/images/photo1.jpg);
+     background-image: url(/img/photo1.png);
      background-repeat: no-repeat;
-     background-position: center right;
+     background-position: center center;
      background-size: cover;
      border-radius: 20px;
      box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
@@ -762,6 +843,10 @@
     gap: 3rem;
 }
 .contenedor_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 21%;
 }
@@ -769,6 +854,7 @@
     margin: 0 auto;
     width: 6rem;
     height: 6rem;
+    padding: .1rem;
 }
 .contenedor_item p{
     text-transform: uppercase;
@@ -776,6 +862,7 @@
     font-size: 1.1rem;
     margin-top: 6px;
 }
+
 
 /*FOOTER*/
 
@@ -800,6 +887,7 @@
     color: var(--blanco);
     margin: 0 auto;
 }
+
 .contenedor_email{
     margin: 0 auto;
     text-align: center;
@@ -838,4 +926,5 @@
         width: 40rem;
         margin-right: 2rem;
     }
+    
 }

@@ -55,11 +55,27 @@
 .store_nav a{
     margin-right: .6rem;
 }
+.store_nav a:focus{
+    color: #25597b;
+}
+.store_nav a:visited{
+    color: #25597b;
+}
+
 .store_title{
     font-size: 3.2rem;
+    text-transform: none;
+    letter-spacing: 5px;
     color: #117e89;
-    text-transform: uppercase;
     font-weight: 900;
+    font-style: italic;
+}
+@media (min-width: 768px) { 
+    .store_title{
+        font-size: 5rem;
+        font-weight: 500;
+        text-transform: none;
+    }
 }
 .review{
     margin: 1rem 0;
@@ -120,7 +136,7 @@
 }
 .selector1 select, .selector2 select{
     background-color: transparent;
-    border: 1px solid var(--primario);
+    border: 1px solid #117e89;;
     border-radius: 5px;
     width: 14rem;
     height: 2.9rem;
@@ -192,6 +208,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.welness_contenedor::before{
+    content: '';
+    background-image: url(/img/icons/trama2.png);
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
 }
 .welness_img{
     width: 80%;
@@ -294,7 +322,7 @@
     text-align: center;
 }
 .especificaciones_info{
-    
+    text-align: center;
     margin: 1rem 1rem;
     padding: 1rem;
 }
@@ -303,7 +331,19 @@
     color: var(--verdeOscuro);
     font-weight: 900;
 }
-
+.wellness-lista{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wellness-lista li{
+    font-size: 1.3rem;
+    color: var(--secundario);
+    font-weight: 700;
+    
+}
 .especificaciones_info p{
     font-size: 1.3rem;
     color: var(--secundario);

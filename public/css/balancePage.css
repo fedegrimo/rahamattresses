@@ -9,7 +9,22 @@
 }
 /*contenido info modificaciones para page BALANCE*/
 .title-balance{
+    text-transform: none;
+    letter-spacing: 5px;
     color:#22541a ;
+    font-weight: 500;
+    
+}
+@media (min-width: 768px) { 
+    .title-balance{
+        font-size: 5rem;
+        font-weight: 500;
+        text-transform: none;
+    }
+}
+.balance_text{
+    color: #22541a;
+    font-weight: 500;
 }
 .btnBuyBalance{
     margin: 6rem 0;
@@ -44,7 +59,22 @@
 .balance{
     width: 100%;
     background-color: #386641;
-    background-image: linear-gradient(90deg, #16400f 58%, #22531a 95%);
+    background-image: linear-gradient(90deg, #16400f 58%, #275f1e7e 95%);
+    position: relative;
+    overflow: hidden;
+}
+.balance::before{
+    content: '';
+    background-image: url(/img/icons/trama3.png);
+    background-repeat: no-repeat;
+    background-position: right right;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: -80px;
+    display: block;
+    position: absolute;
 }
 
 .balance_contenedor{
