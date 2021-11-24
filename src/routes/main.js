@@ -6,9 +6,10 @@ const router = express.Router();
 const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.index); 
-router.get('/essential', mainController.essential); 
-router.get('/wellness', mainController.wellness); 
-router.get('/balance', mainController.balance); 
-router.get('/about', mainController.about); 
+router.get('/:id', mainController.index); 
+router.get('/essential/:id', mainController.essential); 
+router.get('/wellness/:id', mainController.wellness); 
+router.get('/balance/:id', mainController.balance); 
+router.get('/about/:id', mainController.about); 
 
 module.exports = router;

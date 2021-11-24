@@ -1,93 +1,85 @@
 [
     {
-        "id": 1,
-        "picture": "HomeProducto1.png",
-        "discount":10,
-        "price":299,
-        "title":"ECO FRIENDLY",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus accumsan enim, sit amet tristique mauris vulputate sit amet. Cras moles",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"in-sale"
-    },
-    {
-        "id": 2,
-        "picture": "HomeProducto2.png",
-        "price":489,
-        "discount":10,
-        "title":"Concrete Shaving Kit",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus accumsan enim, sit amet tristique mauris vulputate sit amet. Cras moles",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"in-sale"
-    },
+        "es": {
+            
+                "essential" : {
+                    "description": "Cómodo y práctico. Con tecnología esencial para una adecuada combinación entre suavidad y frescura. Sueño instantáneo asegurado.",
+                    "specification":"Con Memory Foam y Sanitized®. Comodidad que se adapta a tu cuerpo y te protege de hongos y bacterias. Cubierta de tejido de punto, frescura que se respira.",
+                    "medidas" : "Medidas",
+                    "construction" : "Construcción",
+                    "sensation" : "Sensación",
+                    "medidas_descripction":"Twin,Full,Queen,King",
+                    "construcction_description":"Compuesto por 3 capas: - 3 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 3 cm Soft Foam: densidad media, soporte fundamental - 14 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                    "sensation_description":"Mid-Firm",
+                    "certificados_description":""
+                },
 
-    {
-        "id": 3,
-        "picture": "HomeProducto3.png",
-        "price":954,
-        "discount":10,
-        "title":"WOODEN CHAIR",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus accumsan enim, sit amet tristique mauris vulputate sit amet. Cras moles",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"in-sale"
-    },
+                "balance" : {
+                    "description": "El equilibrio perfecto entre alta calidad y una solución natural.",
+                    "specification":"Con Memory Foam y Bamboo®. Máxima comodidad y una barrera natural contra las bacterias. Su tratamiento Adaptive® mantiene el ambiente fresco y seco. Cubierta de tejido de punto, circulación de aire positiva.",
+                    "medidas" : "Medidas",
+                    "construction" : "Construcción",
+                    "sensation" : "Sensación",
+                    "medidas_descripction":"Twin,Full,Queen,King",
+                    "construcction_description":"Compuesto por 3 capas: - 3 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 3 cm Soft Foam: densidad media, soporte fundamental - 24 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                    "sensation_description":"Mid-Firm",
+                    "certificados_description":""
+                },
 
-    {
-        "id": 4,
-        "picture":"HomeProducto3.png",
-        "price":99,
-        "discount":10,
-        "title":"CERAMIC STONE VASE",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus accumsan enim, sit amet tristique mauris vulputate sit amet. Cras moles",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"in-sale"
-    },
-    {
-        "id": 5,
-        "picture": "product-2.jpg",
-        "price":199,
-        "discount":10,
-        "title":"stone cup",
-        "description":"Lorem ipsum dolor sit amet",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"visited"
-    },
-    {
-        "id": 6,
-        "picture": "product-3.jpg",
-        "price":150,
-        "discount":10,
-        "title":"gray bag",
-        "description":"Lorem ipsum dolor sit amet",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"visited"
-    },
-    {
-        "id": 7,
-        "picture": "product-4.jpg",
-        "price":200,
-        "discount":10,
-        "title":"chair",
-        "description":"Lorem ipsum dolor sit amet",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"visited"
-    },
-    {
-        "id": 8,
-        "picture":"product-5.jpg",
-        "price":300,
-        "discount":10,
-        "title":"stool",
-        "description":"Lorem ipsum dolor sit amet",
-        "designer":"ABC",
-        "brand":"Dilot",
-        "category":"visited"
+                "wellness" : {
+                    "description": "Descanso integral, tecnología inteligente que interacciona con el ambiente y compone bienestar.",
+                    "specification":"Con Memory Foam y Purotex®, que neutraliza agentes alérgenos de manera natural. Su tratamiento Adaptive® mantiene el ambiente fresco y seco. La cubierta es de tela orgánica Tencel.",
+                    "medidas" : "Medidas",
+                    "construction" : "Construcción",
+                    "sensation" : "Sensación",
+                    "medidas_descripction":"Twin,Full,Queen,King",
+                    "construcction_description":"Plush Compuesto por 3 capas: - 4 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 6 cm Soft Foam: densidad media, soporte fundamental - 20 cm HD Foam: alta densidad, resistencia y estabilidad máxima. Mid Firm - 2 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 8 cm Soft Foam: densidad media, soporte fundamental - 20 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                    "sensation_description":"Mid-Firm / Plush",
+                    "certificados_description":""
+                }
+            
+            
+        },
+        "en": {
+            "essential" : {
+                "description": "Cómodo y práctico. Con tecnología esencial para una adecuada combinación entre suavidad y frescura. Sueño instantáneo asegurado.",
+                "specification":"Con Memory Foam y Sanitized®. Comodidad que se adapta a tu cuerpo y te protege de hongos y bacterias. Cubierta de tejido de punto, frescura que se respira.",
+                "medidas" : "Medidas",
+                "construction" : "Construcción",
+                "sensation" : "Sensación",
+                "medidas_descripction":"Twin,Full,Queen,King",
+                "construcction_description":"Compuesto por 3 capas: - 3 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 3 cm Soft Foam: densidad media, soporte fundamental - 14 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                "sensation_description":"Mid-Firm",
+                "certificados_description":""
+            },
+
+            "balance" : {
+                "description": "El equilibrio perfecto entre alta calidad y una solución natural.",
+                "specification":"Con Memory Foam y Bamboo®. Máxima comodidad y una barrera natural contra las bacterias. Su tratamiento Adaptive® mantiene el ambiente fresco y seco. Cubierta de tejido de punto, circulación de aire positiva.",
+                "medidas" : "Medidas",
+                "construction" : "Construcción",
+                "sensation" : "Sensación",
+                "medidas_descripction":"Twin,Full,Queen,King",
+                "construcction_description":"Compuesto por 3 capas: - 3 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 3 cm Soft Foam: densidad media, soporte fundamental - 24 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                "sensation_description":"Mid-Firm",
+                "certificados_description":""
+            },
+
+            "wellness" : {
+                "description": "Descanso integral, tecnología inteligente que interacciona con el ambiente y compone bienestar.",
+                "specification":"Con Memory Foam y Purotex®, que neutraliza agentes alérgenos de manera natural. Su tratamiento Adaptive® mantiene el ambiente fresco y seco. La cubierta es de tela orgánica Tencel.",
+                "medidas" : "Medidas",
+                "construction" : "Construcción",
+                "sensation" : "Sensación",
+                "medidas_descripction":"Twin,Full,Queen,King",
+                "construcction_description":"Plush Compuesto por 3 capas: - 4 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 6 cm Soft Foam: densidad media, soporte fundamental - 20 cm HD Foam: alta densidad, resistencia y estabilidad máxima. Mid Firm - 2 cm Memory Foam: especialmente diseñada para adaptarse al cuerpo - 8 cm Soft Foam: densidad media, soporte fundamental - 20 cm HD Foam: alta densidad, resistencia y estabilidad máxima",
+                "sensation_description":"Mid-Firm / Plush",
+                "certificados_description":""
+            }
+        },
+        "pt": {
+            
+        }
     }
     
 ]

@@ -7,19 +7,28 @@ const traductor = JSON.parse(fs.readFileSync(traductorFilePath, 'utf-8'));
 
 const controller = {
 	index: (req, res) => {
-        res.render('index', { traductor});
+        route = "/";
+        res.render('index', {route });
 	},
 	wellness: (req, res) => {
-		res.render('wellness', { traductor});
+        language = req.params.id;
+        route = "/wellness/";
+		res.render('wellness', {language,route });
 	},
     essential: (req, res) => {
-        res.render('essential', { traductor});
+        language = req.params.id;
+        route = "/essential/";
+        res.render('essential', {language,route });
 	},
     balance: (req, res) => {
-        res.render('balance', { traductor});
+        language = req.params.id;
+        route = "/balance/";
+        res.render('balance', { language,route });
 	},
     about: (req,res) => {
-        res.render('aboutus', { traductor});
+        language = req.params.id;
+        route = "/about/";
+        res.render('aboutus', { language,route });
     }
 };
 
