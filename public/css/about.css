@@ -36,20 +36,23 @@
     margin: 2rem 0;
 }
 .contenedor_text h1{
+    font-family: 'Carnero Semi Bold Italic';
     text-transform: uppercase;
     font-size: 4.2rem;
     font-weight: bold;
     color: var(--secundarioOscuro);
 }
 .contenedor_text span{
+    font-family: 'Carnero Semi Bold Italic';
     color: var(--secundario);
 }
 
 .contenedor_text p{
+    font-family: 'Carnero Semi Bold Italic';
     max-width: 430px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--negro);
+    color: var(--verdeOscuro);
 }
 .contenedor_img{
     min-width:400px;
@@ -74,10 +77,10 @@
     content: '';
     background-image: url(/img/icons/trama1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     display: block;
     position: absolute;
     top: 75rem;
@@ -90,13 +93,13 @@
         content: '';
         background-image: url(/img/icons/trama1.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: center;
-        width: 30rem;
-        height: 20rem;
+        width: 50rem;
+        height: 30rem;
         display: block;
         position: absolute;
-        top: 50rem;
+        top: 45rem;
         left: 0rem;
        
     }
@@ -128,14 +131,17 @@
 }
 
 .about2_text h2{
-    font-size: 1.7rem;
+    font-family: 'Carnero Semi Bold Italic';
+    font-size: 1.9rem;
     color: var(--verdeOscuro);
-    font-weight: 800;
+    text-align: left;
 }
 .about2_text p{
-    font-size: 1.4rem;
+    font-family: 'Carnero Regular';
+    font-size: 1.9rem;
     color: var(--verdeOscuro);
     font-weight: 400;
+    text-align: left;
 }
 
 @media (min-width:768px) { 
@@ -180,15 +186,15 @@
 }
 
 .bannerDesafio_contenedor img{
-   width: 100%;
-   height: 100%;
+   width: 80%;
+   height: 80%;
    margin: 5rem auto;
 }
 @media (min-width:768px) { 
     .bannerDesafio_contenedor img{
-        width: 80%;
-        height: 80%;
-        margin: 1rem auto;
+        width: 70%;
+        height: 70%;
+        margin: 3rem auto;
      }
 }
 
@@ -203,7 +209,8 @@
 }
 
 .about3 h4{
-    font-size: 2.5rem;
+    font-family: 'Carnero Regular';
+    font-size: 3.5rem;
     text-align: center;
     color: var(--verdeOscuro);
     font-weight: bold;
@@ -282,9 +289,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    
 }
 .banner1_contenedor{
     display: flex;
@@ -293,11 +298,12 @@
     align-items: center;
 }
 .banner1_contenedor img{
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     margin-top: 1rem;
 }
 .banner1_contenedor h4{
+    font-family: 'Carnero Semi Bold';
     margin: 1rem;
     text-align: center;
     color: var(--primario);
@@ -305,10 +311,11 @@
     font-size: 2rem;
 }
 .banner1_contenedor p{
+    font-family: 'Carnero Regular';
     text-align: center;
     color: var(--negro);
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.8rem !important;
 }
 
 .about3_banner2{

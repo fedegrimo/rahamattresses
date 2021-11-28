@@ -1,4 +1,5 @@
 .title-essential{
+    font-family: 'Carnero Semi Bold';
     text-transform: none;
     letter-spacing: 5px;
     color: #75887d;
@@ -8,16 +9,19 @@
 @media (min-width: 768px) { 
     .title-essential{
         font-size: 5rem;
-        font-weight: 500;
         text-transform: none;
     }
 }
 .essential-text{
+    font-family: 'Carnero Regular';
     color: #75887d;
-    font-weight: 700;
+    font-size: 1.8rem;
 }
-
+.selectores{
+    font-family: 'Carnero Regular';
+}
 .btnBuy-essential a{
+    font-family: 'Carnero Regular';
     font-size: 1.5rem;
     border: 1px solid #75887d;;
     padding: 1.1rem 1rem;

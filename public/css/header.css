@@ -17,14 +17,16 @@ body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     margin: 0 auto;
+    
 }
 main{
     margin: 0 auto;
-    max-width: 1600px;
+    
     background: rgb(77,125,136);
     background: linear-gradient(0deg, rgba(77,125,136,0.40129555240064774) 0%, rgba(229,251,254,0.4741246840533089) 52%, rgba(255,255,255,0.19681375968356096) 100%);
    
 }
+
 
 h1, h2, h3 {
     font-weight: 900;

@@ -40,11 +40,15 @@
     width: 100%;
     height: 100%;
 }
+@media (min-width:768px) { 
+    
+}
 .store_contenido{
     width: 100%;
     max-width: 507px;
 }
 .store_nav{
+    font-family: 'Carnero Semi Bold';
     font-size: 1.2rem;
     margin: 1rem 0;
     text-align: left;
@@ -63,6 +67,7 @@
 }
 
 .store_title{
+    font-family: 'Carnero Semi Bold';
     font-size: 3.2rem;
     text-transform: none;
     letter-spacing: 5px;
@@ -78,20 +83,23 @@
     }
 }
 .review{
+    font-family: 'Carnero Regular';
     margin: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .review i{
     margin-right: 1rem;
     color: var(--verdeOscuro);
 }
 .review span{
+    font-family: 'Carnero Regular';
     font-size: 1.2;
     font-weight: 500;
     color: var(--verdeOscuro);
 }
 .store_text{
-    font-size: 1.4rem;
+    font-family: 'Carnero Regular';
+    font-size: 1.8rem;
     color: var(--verdeOscuro);
     font-weight: 400;
     text-align: left;
@@ -109,6 +117,7 @@
     }
 }
 .selectores{
+    font-family: 'Carnero Regular';
     margin: 2rem 0;
     display: flex;
     flex-direction: row;
@@ -143,12 +152,22 @@
 }
 @media (min-width:768px) { 
     .selector1 select, .selector2 select{
-        width: 20rem;
+        width: 14rem;
         height: 2.9rem;
         border-radius: 3px;
     }
 }
+@media (min-width:1100px) { 
+    @media (min-width:768px) { 
+        .selector1 select, .selector2 select{
+            width: 20rem;
+            height: 2.9rem;
+            border-radius: 3px;
+        }
+    }
+}
 .btnBuy{
+    font-family: 'Carnero Regular';
     margin: 4rem 0;
 }
 
@@ -215,36 +234,59 @@
     content: '';
     background-image: url(/img/icons/trama2.png);
     display: block;
-    width: 50%;
+    width: 70%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: 6rem;
     position: absolute;
+    z-index: 0;
+}
+@media (min-width: 768px) { 
+    .welness_contenedor::before{
+        content: '';
+        background-image: url(/img/icons/trama2.png);
+        display: block;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+    }
 }
 .welness_img{
     width: 80%;
     max-width: 380px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 1;
 }
-.welness_img img{
-    width: 100%;
-    height: 100%;
+.welness_item-img img{
+    width: 7rem;
+    height: 7rem;
+    margin: auto auto;
+    padding: .5rem;
 }
 .welness_grid{
     color: var(--blanco);
+    z-index: 1;
 }
 .welness_title{
-    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Carnero Semi Bold Italic';
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
+    z-index: 1;
 }
 .welness_items{
+    font-family: 'Carnero Regular';
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .welness_item{
     width: 250px;
@@ -256,44 +298,91 @@
     grid-template-columns: 30% 70%;
     column-gap: 1rem;
     max-width:272px;
+    z-index: 1;
 }
 .item_img{
     width: 7rem;
     height: 7rem;
     margin: auto auto;
     padding: .5rem;
+    z-index: 1;
 }
+@media (min-width:580px) { 
+    .wellnessFirstItems{
+        margin-bottom: 11rem;
+    }
+}
+
 .item_contenido h5{
     font-size: 1.3rem;
     font-weight: 700;
     margin: .7rem 0;
+    z-index: 1;
 }
 .item_contenido span{
     font-size: 1rem;
     font-weight: 400;
+    z-index: 1;
 }
-@media (min-width:780px) { 
+@media (min-width:768px) { 
     .welness_contenedor{
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-start;
         height: 50rem;
     }
-    .welness_img{
-        width: 100%;
-        margin-right: 3rem;
+
+    .welness_title{
+        display: block;
+        width: 50%;
+        margin: 0 4rem;
+        z-index: 1;
     }
-    .welness_grid{
-        width: 80%;
+
+    .welness_img{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 25rem;
+        max-width: 244px;
+        max-height: 230px;
+        z-index: 1;
+    }
+    .welness_img img{
+        width: 100%;
+        height: 100%;
+    }
+     .welness_grid{
+        margin: 0;
+        width: 70%;
         display: grid;
         grid-row: 30% 70%;
     }
-    .welness_items{
+    .wellnessFirstItems{
+        margin-bottom: 0;
+    }
+     /* .welness_items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 auto;
+    }  */
+    .wellnessFirstItems{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        column-gap: 0;
+    }
+    .wellnessLastItems{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
     }
 }
-
+@media (min-width:1100px) { 
+    .welness_img{
+        margin-right: 10rem;
+    }
+}
 
 
 .especificaciones{
@@ -308,43 +397,50 @@
 .especificaciones_contenedor{
     width: 90%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
     text-transform: uppercase;
 }
  .especificaciones_title{
+    font-family: 'Carnero Semi Bold';
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--secundarioOscuro);
-    text-align: center;
+    text-align: left;
 }
 .especificaciones_info{
-    text-align: center;
+    font-family: 'Carnero Regular';
+    text-align: left;
     margin: 1rem 1rem;
     padding: 1rem;
 }
 .especificaciones_info h5{
+    font-family: 'Carnero Regular';
     font-size: 1.5rem;
     color: var(--verdeOscuro);
     font-weight: 900;
 }
 .wellness-lista{
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+    padding: 0;
 }
 .wellness-lista li{
+    width: 100%;
+    text-align: left;
     font-size: 1.3rem;
     color: var(--secundario);
     font-weight: 700;
     
 }
 .especificaciones_info p{
+    text-align: left;
     font-size: 1.3rem;
     color: var(--secundario);
     font-weight: 700;
