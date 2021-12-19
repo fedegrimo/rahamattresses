@@ -1,28 +1,7 @@
+@import url(/css/fonts.css);
 @import url(/css/header.css);
 @import url(/css/index.css);
 @import url(/css/about.css);
 @import url(/css/detalleProducto.css);
 @import url(/css/balancePage.css);
 @import url(/css/essentialPage.css);
-
-@font-face {
-    font-family: 'Carnero Bold Italic';
-    src: url("/css/Fonts/Carnero\ Bold\ Italic.otf") format("opentype");
-}
-
-@font-face {
-    font-family: 'Carnero Bold';
-    src: url("/css/Fonts/Carnero\ Bold.otf") format("opentype");
-}
-@font-face {
-    font-family: 'Carnero Regular';
-    src: url("/public/css/Fonts/Carnero\ Regular.otf") format("opentype");
-}
-@font-face {
-    font-family: 'Carnero Semi Bold';
-    src: url("/css/Fonts/Carnero\ SemiBold.otf") format("opentype");
-}
-@font-face {
-    font-family: 'Carnero Semi Bold Italic';
-    src: url("/css/Fonts/Carnero\ SemiBold\ Italic.otf") format("opentype");
-}

@@ -141,7 +141,7 @@ ul{
         display: block;
     }
     .nav_item{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #25597b;
         display: flex;
         flex-direction: row;
@@ -162,7 +162,7 @@ ul{
     }
     .header_redes{
         font-size: 1.8rem;
-        color: #25597b;
+        color: #25597b!important;
         display: flex;
         justify-content: center;
         align-items: center;

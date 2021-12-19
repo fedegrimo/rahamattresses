@@ -1,10 +1,13 @@
 .title-essential{
-    font-family: 'Carnero Semi Bold';
+    font-family: 'CarneroSemiBold';
     text-transform: none;
     letter-spacing: 5px;
     color: #75887d;
     font-weight: 500;
     
+}
+.essential_grid {
+    color:#ffffff!important;
 }
 @media (min-width: 768px) { 
     .title-essential{
@@ -13,15 +16,15 @@
     }
 }
 .essential-text{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     color: #75887d;
     font-size: 1.8rem;
 }
 .selectores{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
 }
 .btnBuy-essential a{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     font-size: 1.5rem;
     border: 1px solid #75887d;;
     padding: 1.1rem 1rem;

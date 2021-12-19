@@ -1,3 +1,4 @@
+
 :root {
     --primario: #066536;
     --blanco: #F6F6F6;
@@ -17,7 +18,7 @@
 }
 
 .contenido1__test{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     width: 100%;
     height: 40rem;
     border-radius: 20px;
@@ -63,8 +64,8 @@
     -moz-box-shadow: -1px 0px 4px -1px rgba(0,0,0,0.73);
 }
 .contenido1__black h1{
-    font-family: 'Carnero Semi Bold Italic';
-    font-size: 4rem;
+    font-family: "CarneroSemiBold";
+    font-size: 3.8rem;
     color: #227980;
     margin-bottom: 0;
     font-weight: 700;
@@ -72,14 +73,15 @@
     
 }
 .contenido1__black h2{
-    font-family: 'Carnero Semi Bold Italic';
-    font-size: 3rem;
+    font-family: "CarneroRegular";
+    font-size: 3.8rem;
+    
     margin-top: 0;
     font-weight: 400;
     margin-right: 3rem;
 }
 .btn1{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     margin-right: 3rem;
     font-size: 1.3rem;
     color: var(--verdeOscuro);
@@ -125,7 +127,7 @@
 /*CONTENIDO 2*/
 
 .encuenta{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     width: 50%;
     margin: 2rem auto;
     background-color: #FAF6FA;
@@ -257,7 +259,7 @@
     }
 }
 .btn2{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     display: block;
     text-align: center;
     font-size: 1.5rem;
@@ -326,7 +328,7 @@
     color: transparent;
     line-height:1;
     margin-right: -1rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .cont2_contenedor{
@@ -339,7 +341,7 @@
     margin: 0;
 }
 .cont2_contenedor p{
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
     text-align: center;
     margin-top: -30px;
 }
@@ -405,7 +407,7 @@
     
 }
 .principal__titulo1{
-    font-family: 'Carnero Semi Bold Italic' !important;
+    font-family: "CarneroSemiBoldItalic" !important;
     font-weight: 300;
     letter-spacing: 4px;
     font-family: var(--fuentePrincipal);
@@ -421,7 +423,7 @@
 }
 
 .principal__titulo2{
-    font-family: 'Carnero Semi Bold Italic' !important;
+    font-family: "CarneroSemiBoldItalic" !important;
     font-weight: 300;
     letter-spacing: 4px;
     font-size: 6rem;
@@ -434,7 +436,7 @@
     color: #22541a;
 }
 .principal__titulo3{
-    font-family: 'Carnero Semi Bold Italic' !important;
+    font-family: "CarneroSemiBoldItalic" !important;
     font-weight: 300;
     letter-spacing: 4px;
     font-size: 6rem;
@@ -476,7 +478,7 @@
     width: 90%;
 }
 .essential_list ul{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -498,7 +500,7 @@
     margin: 2.5rem auto;
 }
 .btn4{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
     font-size: 1.5rem;
     margin: 0 auto;
     border: 1px solid var(--verdeOscuro);
@@ -532,7 +534,7 @@
  /*SECCION BASE ECO*/
 
  .basesEco{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
      width: 100%;
      height: auto;
      background-color: var(--blanco);
@@ -567,14 +569,14 @@
  }
  .contenido_descripcion p {
 
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
      font-weight: 500;
      line-height: 1.5;
      margin-bottom: 4rem;
  }
  @media (min-width:768px) { 
     .contenido_descripcion p {
-        font-family: 'Carnero Semi Bold';
+        font-family: "CarneroSemiBold";
          font-weight: 500;
          line-height: 1.5;
          margin-bottom: 4rem;
@@ -582,7 +584,7 @@
      }
  }
  .btn5{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
      border: 1px solid var(--primario);
      padding: 1rem;
      border-radius: 20px;
@@ -641,7 +643,7 @@
      margin-bottom: 0;
  }
  .tecnologias h3{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: "CarneroSemiBoldItalic";
     letter-spacing: 2px;
      font-size: 3.5rem;
      color: #0b3c4b;
@@ -653,7 +655,7 @@
      margin: 0 auto;
  }
  .selector{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
 	position: relative;
 	margin: 0 auto;
 	width: 440px;
@@ -719,7 +721,7 @@
 }
 
  .tecnologias_tipos{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
      width: 90%;
      margin: 3rem auto;
      display: flex;
@@ -773,7 +775,7 @@
 } 
 
  .tipos_contenido h4{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: "CarneroSemiBoldItalic";
      color: var(--blanco);
      margin: 0 auto;
      text-align: center;
@@ -782,7 +784,7 @@
      font-size: 1.5rem;
  }
  .tipos_contenido p{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
      font-weight: 400;
      color: var(--blanco);
      text-align: center;
@@ -840,7 +842,7 @@
 }
 
 .desafio_contenido h3{
-    font-family: 'Carnero Bold';
+    font-family: "CarneroBold";
     letter-spacing: 4px;
     font-size: 3rem;
     color:#117e89;
@@ -849,7 +851,7 @@
     margin-right: 1rem;
 }
 .desafio_contenido h4{
-    font-family: 'Carnero Bold';
+    font-family: "CarneroBold";
     letter-spacing: 3px;
     text-align: right;
     font-size: 2.7rem;
@@ -859,7 +861,7 @@
     margin-right: 1rem;
 }
 .btn6{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
     margin-right: 1rem;
     border: none;
     color: var(--blanco);
@@ -907,7 +909,7 @@
 }
 
 .barraiconos_contenedor{
-    font-family: 'Carnero Regular';
+    font-family: "CarneroRegular";
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -930,7 +932,7 @@
     padding: .5rem;
 }
 .contenedor_item p{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
@@ -959,7 +961,7 @@
     column-gap: 1rem;
 }
 .footer_contenedor p{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
     text-align: center;
     font-size: 1rem;
     color: var(--blanco);
@@ -982,7 +984,7 @@
     -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 .submit{
-    font-family: 'Carnero Semi Bold';
+    font-family: "CarneroSemiBold";
     font-size: 1.2rem;
     width: 12rem;
     margin-top: .5rem;

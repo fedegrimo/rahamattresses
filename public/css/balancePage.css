@@ -9,7 +9,7 @@
 }
 /*contenido info modificaciones para page BALANCE*/
 .title-balance{
-    font-family: 'Carnero Semi Bold';
+    font-family: 'CarneroSemiBold';
     text-transform: none;
     letter-spacing: 5px;
     color:#22541a ;
@@ -24,7 +24,7 @@
     }
 }
 .balance_text{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     color: #22541a;
     font-size: 1.8rem;
 }
@@ -37,7 +37,7 @@
     }
 }
 .btnBuyBalance a{
-    font-family: 'Carnero Regular' !important;
+    font-family: 'CarneroRegular' !important;
     font-size: 1.5rem;
     letter-spacing: 2px;
     border: 1px solid #22541a;
@@ -123,7 +123,7 @@ z-index: 0;
     color: var(--blanco);
 }
 .balance_title{
-    font-family: 'Carnero Semi Bold';
+    font-family: 'CarneroSemiBold';
     font-weight: 400;
     font-size: 1.5rem;
     text-align: left;
@@ -138,6 +138,7 @@ z-index: 0;
     align-items: center;
     z-index: 99;
 }
+
 .balance_item{
     width: 250px;
     height: 9rem;
@@ -157,13 +158,13 @@ z-index: 0;
     padding: .5rem;
 }
 .item_contenido h5{
-    font-family: 'Carnero Semi Bold';
+    font-family: 'CarneroSemiBold';
     font-size: 1.3rem;
     font-weight: 700;
     margin: .7rem 0;
 }
 .item_contenido span{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     font-size: 1.2rem;
     text-align: left;
 }

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "CarneroBold";
+    src: url("/fonts/CarneroBold.otf");
+}
+
+@font-face {
+    font-family: "CarneroBoldItalic";
+    src: url("/fonts/CarneroBoldItalic.otf");
+}
+@font-face {
+    font-family: "CarneroRegular";
+    src: url("/fonts/CarneroRegular.otf");
+}
+@font-face {
+    font-family: "CarneroSemiBold";
+    src: url("/fonts/CarneroSemiBold.otf");
+}
+@font-face {
+    font-family: "CarneroSemiBoldItalic" ;
+    src: url("/fonts/CarneroSemiBoldItalic.otf");
+}

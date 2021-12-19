@@ -27,6 +27,7 @@ server.set("views", path.resolve(__dirname, "views"));
 
 // ************ FOLDERS LIBRARY ************
 server.use('/css',express.static(path.resolve(__dirname,'public/css')));
+server.use('/fonts',express.static(path.resolve(__dirname,'public/css/Fonts')));
 server.use('/images',express.static(path.resolve(__dirname,'public/img')));
 server.use('/js',express.static(path.resolve(__dirname,'public/js')));
 

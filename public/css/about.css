@@ -36,27 +36,28 @@
     margin: 2rem 0;
 }
 .contenedor_text h1{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: 'CarneroSemiBoldItalic';
     text-transform: uppercase;
     font-size: 4.2rem;
     font-weight: bold;
     color: var(--secundarioOscuro);
 }
 .contenedor_text span{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: 'CarneroSemiBoldItalic';
     color: var(--secundario);
 }
 
 .contenedor_text p{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: 'CarneroSemiBoldItalic';
     max-width: 430px;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--verdeOscuro);
 }
 .contenedor_img{
-    min-width:400px;
+    min-width:500px;
 }
+
 @media (min-width:768px) { 
     .about_contenedor{
         display: grid;
@@ -79,8 +80,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    width: 35rem;
-    height: 35rem;
+    width: 15rem;
+    height: 15rem;
     display: block;
     position: absolute;
     top: 75rem;
@@ -131,13 +132,13 @@
 }
 
 .about2_text h2{
-    font-family: 'Carnero Semi Bold Italic';
+    font-family: 'CarneroSemiBoldItalic';
     font-size: 1.9rem;
     color: var(--verdeOscuro);
     text-align: left;
 }
 .about2_text p{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     font-size: 1.9rem;
     color: var(--verdeOscuro);
     font-weight: 400;
@@ -204,12 +205,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem;
+    padding: 1.8rem;
     position: relative;
 }
 
 .about3 h4{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     font-size: 3.5rem;
     text-align: center;
     color: var(--verdeOscuro);
@@ -303,7 +304,7 @@
     margin-top: 1rem;
 }
 .banner1_contenedor h4{
-    font-family: 'Carnero Semi Bold';
+    font-family: 'CarneroSemiBold';
     margin: 1rem;
     text-align: center;
     color: var(--primario);
@@ -311,7 +312,7 @@
     font-size: 2rem;
 }
 .banner1_contenedor p{
-    font-family: 'Carnero Regular';
+    font-family: 'CarneroRegular';
     text-align: center;
     color: var(--negro);
     font-weight: 400;
