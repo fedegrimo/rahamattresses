@@ -1,36 +1,50 @@
-const  essential = document.querySelector('#btn-e');
-const  balance = document.querySelector('#btn-balance');
-const  wellness = document.querySelector('#btn-wellness');
-const  memory = document.querySelector('.btn-memory');
-const  purotex = document.querySelector('.btn-purotex');
-const  bamboo = document.querySelector('.btn-bamboo');
-const  adaptative = document.querySelector('.btn-adaptative');
-const  sanitized = document.querySelector('.btn-sanitized');
-const  tencel = document.querySelector('.btn-tencel');
 
-essential.addEventListener('click',() => {
-    removeClass();
-    memory.classList.add('active');
-    purotex.classList.add('active');
+
+
+
+
+window.addEventListener("load", ()=>{
+    essentialAction();
 });
-
-balance.addEventListener('click',() => {
+function essentialAction(){
     removeClass();
+    var  memory = document.querySelector('#btn-memory');
+    var  sanitized = document.querySelector('#btn-sanitized');
+    memory.classList.add('active');
+    sanitized.classList.add('active');
+}
+
+function balanceAction(){
+    removeClass();
+    var  memory = document.querySelector('#btn-memory');
+    var  bamboo = document.querySelector('#btn-bamboo');
+    var  adaptative = document.querySelector('#btn-adaptative');
     memory.classList.add('active');
     bamboo.classList.add('active');
     adaptative.classList.add('active');
-});
+}
 
-wellness.addEventListener('click',() => {
+function wellnessAction(){
     removeClass();
+    var  memory = document.querySelector('#btn-memory');
+    var  purotex = document.querySelector('#btn-purotex');
+    var  adaptative = document.querySelector('#btn-adaptative');
+    var  sanitized = document.querySelector('#btn-sanitized');
+    var  tencel = document.querySelector('#btn-tencel');
     memory.classList.add('active');
     sanitized.classList.add('active');
     purotex.classList.add('active');
     tencel.classList.add('active');
     adaptative.classList.add('active');
-});
+}
 
 function removeClass(){
+    var  memory = document.querySelector('#btn-memory');
+    var  purotex = document.querySelector('#btn-purotex');
+    var  bamboo = document.querySelector('#btn-bamboo');
+    var  adaptative = document.querySelector('#btn-adaptative');
+    var  sanitized = document.querySelector('#btn-sanitized');
+    var  tencel = document.querySelector('#btn-tencel');
     memory.classList.remove('active');
     purotex.classList.remove('active');
     bamboo.classList.remove('active');
