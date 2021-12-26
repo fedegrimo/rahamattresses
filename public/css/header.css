@@ -150,12 +150,10 @@ ul{
         align-items: center;
         text-decoration: none;
     }
-    .nav_item a:focus{
+    .nav_item a,.nav_item a:focus,.nav_item a:visited {
         color: #25597b;
     }
-    .nav_item a:visited{
-        color: #25597b;
-    }
+    
     .nav_item li{
         margin-right: 4rem;
         font-weight: 500;
@@ -170,10 +168,7 @@ ul{
     .header_redes a{
         margin-right: 1rem;
     }
-    .header_redes a:focus{
-        color: #25597b;
-    }
-    .header_redes a:visited{
+    .header_redes a, .header_redes a:focus, .header_redes a:visited{
         color: #25597b;
     }
     .hamburger{
