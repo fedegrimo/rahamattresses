@@ -342,7 +342,7 @@
     .welness_img{
         width: 50%;
         height: 50%;
-        margin-bottom: 10rem;
+        margin-bottom: rem;
         max-width: 300px;
         max-height: 283px;
         z-index: 1;
@@ -402,7 +402,7 @@
     text-transform: uppercase;
 }
  .especificaciones_title{
-    font-family: 'CarneroSemiBold';
+    font-family: 'CarneroRegular';
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--secundarioOscuro);
