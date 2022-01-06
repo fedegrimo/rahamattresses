@@ -28,7 +28,7 @@
             <div class="encuenta__cont1">
                 <div class="cont1_contenido">
                     <h3>Encontrá tu colchón ideal</h3>
-                    <a class="btn2">BUSCAR</a>  
+                    <a class="btn2" onclick="validationQuestion()">BUSCAR</a>  
                 </div>
                 
             </div>
@@ -36,10 +36,16 @@
             <div class="encuesta__cont2">
                 <h3 class="num-relleno numUno">1</h3>
                 <div class="cont2_contenedor">
+                    
                     <p>¿Cuál es tu posición al dormir?</p>
-                    <a class="btn3" href="">de espaldas</a>
-                    <a class="btn3" href="">de costado</a>
-                    <a class="btn3" href="">boca abajo</a>
+                    <ul>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="wellness" >de espaldas</a></li>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="balance">de costado</a></li>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="essential">boca abajo</a></li>
+                    </ul>
+                    
+                    
+                    
                 </div>
             </div>
 
@@ -47,9 +53,11 @@
                 <h3 class="num-relleno">2</h3>
                 <div class="cont2_contenedor">
                     <p>¿Qué interrumpe tu sueño?</p>
-                    <a class="btn3" href="">calor</a>
-                    <a class="btn3" href="">dolores</a>
-                    <a class="btn3" href="">movimientos</a>
+                    <ul>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="wellness" >calor</a></li>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="balance">dolores</a></li>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="essential">movimientos</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -57,9 +65,11 @@
                 <h3 class="num-relleno">3</h3>
                 <div class="cont2_contenedor">
                     <p>¿Cuántas horas dormis?</p>
-                    <a class="btn3" href="">6 / 7 horas</a>
-                    <a class="btn3" href="">8 / 9 horas</a>
-                    <a class="btn3" href="">10 / 12 horas</a>
+                    <ul>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="balance" >6 / 7 horas</a></li>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="essential">8 / 9 horas</a></li>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="wellness">10 / 12 horas</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
