@@ -88,7 +88,7 @@
     font-weight: 600;
     border: 1px solid var(--verdeOscuro);
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1rem 2rem 0.7rem 2rem;
     background-color: transparent;
     transition: all 300ms ease-in;
 }
@@ -128,7 +128,7 @@
 
 .encuenta{
     font-family: "CarneroRegular";
-    width: 50%;
+    width: 90%;
     margin: 2rem auto;
     background-color: #FAF6FA;
     border-radius: 20px;
@@ -153,7 +153,7 @@
     height: 20rem;
     display: block;
     position: absolute;
-    top: 147rem;
+    top: 110rem;
     left: 0rem;
    
 }
@@ -168,7 +168,7 @@
     height: 20rem;
     display: block;
     position: absolute;
-    top: 147rem;
+    top: 110rem;
     right: 0rem;
    z-index: 0;
 }
@@ -180,10 +180,10 @@
         background-size: cover;
         background-position: center;
         width: 30rem;
-        height: 17rem;
+        height: 20rem;
         display: block;
         position: absolute;
-        top: 57rem;
+        top: 60rem;
         left: -rem;
        
     }
@@ -195,10 +195,10 @@
         background-size: cover;
         background-position: center;
         width: 30rem;
-        height: 17rem;
+        height: 20rem;
         display: block;
         position: absolute;
-        top: 57rem;
+        top: 60rem;
         right: -4rem;
        z-index: 0;
     }
@@ -268,7 +268,7 @@
     background-color: transparent;
     width: 60%;
     min-width: 113px;
-    padding: 1rem;
+    padding: 1rem 2rem 0.7rem 2rem;
     border: 1px solid var(--negro);
     border-radius: 2rem;
     transition: all 300ms ease-in;
@@ -287,7 +287,7 @@
     background-color: transparent;
     width: 30%;
     min-width: 113px;
-    padding: 1rem;
+    padding: 1rem 1rem 0.7rem 1rem;
     border: 1px solid #6e848c;
     border-radius: 2rem;
     color: #37354a;
@@ -337,11 +337,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 .cont2_contenedor p{
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
     text-align: center;
     margin-top: -30px;
 }
@@ -349,7 +349,7 @@
     .encuenta{
         width: 92%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 20% 25% 25% 25%;
         gap: 2rem;
     }
     .encuenta__cont1{
@@ -359,8 +359,8 @@
     .encuesta__cont2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem 2rem;
-        max-width:158px;
+        padding-right: 1rem;
+        width: 100%;
     }
     .cont2_contenedor{
         width: 100%;
@@ -368,11 +368,12 @@
     }
     .cont2_contenedor p{
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.6rem!important;
         margin-top: 0;
     }
     .num-relleno{
-        font-size: 15vw;
+        font-size: 20vw;
+        text-align: right;
         margin: 0;
         margin-top: 3rem;
         margin-right: 1rem;
@@ -407,8 +408,8 @@
     
 }
 .principal__titulo1{
-    font-family: "CarneroSemiBoldItalic" !important;
-    font-weight: 300;
+    font-family: "Montserrat" !important;
+    font-weight: 600;
     letter-spacing: 4px;
     font-family: var(--fuentePrincipal);
     font-size: 6rem;
@@ -423,8 +424,8 @@
 }
 
 .principal__titulo2{
-    font-family: "CarneroSemiBoldItalic" !important;
-    font-weight: 300;
+    font-family: "Montserrat" !important;
+    font-weight: 600;
     letter-spacing: 4px;
     font-size: 6rem;
     -webkit-text-stroke: 1.5px #22541a;
@@ -436,8 +437,8 @@
     color: #22541a;
 }
 .principal__titulo3{
-    font-family: "CarneroSemiBoldItalic" !important;
-    font-weight: 300;
+    font-family: "Montserrat" !important;
+    font-weight: 600;
     letter-spacing: 4px;
     font-size: 6rem;
     -webkit-text-stroke: 1.5px #117e89;
@@ -497,19 +498,21 @@
     margin: 5rem auto;
 }
 .wellness_btn{
-    margin: 2.5rem auto;
+    margin: 5rem auto;
 }
 .btn4{
-    font-family: "CarneroSemiBold";
+    font-family: "CarneroRegular";
     font-size: 1.5rem;
     margin: 0 auto;
     border: 1px solid var(--verdeOscuro);
     border-radius: 20px;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem 0.7rem 2rem;
     background-color: var(--verdeOscuro);
     color: var(--blanco);
+    vertical-align: middle;
     text-align: center;
     cursor: pointer;
+    transition: all 300ms ease-in;
 }
 .essential_principal:hover .btn4{
     border: none;
@@ -519,12 +522,14 @@
  .btn4:active{
     background-color: #22541a;
  }
- .essential_principal:hover .btn4balance{
-     background-color: #22541a;
+ .essential_principal:hover .btn4h{
+     background-color: #75887d;
  }
- .essential_principal:hover .btn4welness{
-     background-color: #117e89;;
- }
+
+ .essential_principal:focus .btn4h{
+    background-color: #22541a;
+}
+
 @media (min-width:1200px) { 
     .essential{
         display: grid;
@@ -584,9 +589,9 @@
      }
  }
  .btn5{
-    font-family: "CarneroSemiBold";
+    font-family: "CarneroRegular";
      border: 1px solid var(--primario);
-     padding: 1rem;
+     padding: 1.3rem 1rem 1rem 1rem;
      border-radius: 20px;
      font-weight: 500;
      margin-bottom: 2rem;
@@ -658,6 +663,7 @@
     font-family: "CarneroSemiBold";
 	position: relative;
 	margin: 0 auto;
+    padding-top:0.3rem;
 	width: 440px;
 	height: 35px;
 	background:transparent;
@@ -680,6 +686,10 @@
 	text-decoration: none;
 	color: #036666;
     z-index: 1;
+}
+
+.item a:hover{
+    color:#ffffff;
 }
 
 .animation{
@@ -944,52 +954,58 @@
 
 .footer{
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     background: rgb(10,49,58);
     background: linear-gradient(90deg, rgba(10,49,58,1) 0%, rgba(3,85,85,1) 40%, rgba(4,156,156,1) 100%);
    
 }
 .footer_contenedor{
-    width: 100%;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 1rem;
-}
-.footer_contenedor p{
-    font-family: "CarneroSemiBold";
-    text-align: center;
-    font-size: 1rem;
-    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center; 
+    
 }
 
-.contenedor_email{
-    margin: 0 auto;
+.footer_contenedor p{
+    width: 80%;
+    font-family: "CarneroSemiBold";
     text-align: center;
+    font-size: 1.6rem;
+    color: var(--blanco);
+    padding-top: 1rem;
 }
-.email{
+
+
+.footer_contenedor .email{
+    font-family: 'Montserrat';
     color: var(--blanco);
     font-size: 1.7rem;
-    width: 90%;
-    height: 4rem;
+    width: 80%;
+    padding-top: 1.4rem;
+    padding-bottom: 1.1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     background-color: transparent;
-    border: 2px solid var(--blanco);
+    border: 1px solid var(--blanco);
     border-radius:10px;
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
-.submit{
+.footer_contenedor .email::placeholder{
+    color:#ffffff;
+    padding-left: 10px;
+}
+.footer_contenedor .submit{
     font-family: "CarneroSemiBold";
     font-size: 1.2rem;
-    width: 12rem;
-    margin-top: .5rem;
-    padding: .8rem;
-    border-radius: 10px;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 1rem 3rem 0.7rem 3rem;
+    border-radius: 15px;
     background-color: var(--blanco);
     color: var(--verdeOscuro);
     text-transform: uppercase;
@@ -997,26 +1013,35 @@
     transition: all 300ms ease;
     cursor: pointer;
 }
-.submit:hover{
+.footer_contenedor .submit:hover{
     border: none;
     background-color:var(--verdeOscuro);;
     color: #e9dad8;
 }
-.submit:active{
+.footer_contenedor .submit:active{
     background-color:var(--verdeOscuro);;
     color: #e9dad8;
 }
 @media (min-width: 768px) { 
-    .footer_contenedor p{
-        text-align: center;
-        font-size: 1.5rem;
+    .footer_contenedor{
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        display: grid;
+        grid-template-columns: 50% 35% 15%;
+        column-gap: 1rem;
     }
-    .email{
-        max-width: 427px;
+    .footer_contenedor p{
+        width: 80%;
+        font-size: 2rem;
     }
-    .contenedor_email{
-        margin: 0;
-        text-align: center;
+
+    .footer_contenedor .submit{
+        width: 50%;
+        margin-top: 0;
+        border-radius: 20px;
     }
+    
 }

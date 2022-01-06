@@ -64,12 +64,12 @@
 }
 
 .store_title{
-    font-family: 'CarneroSemiBold';
+    font-family: 'Montserrat';
     font-size: 3.2rem;
     text-transform: none;
     letter-spacing: 5px;
     color: #117e89;
-    font-weight: 900;
+    font-weight: 600;
     font-style: italic;
 }
 @media (min-width: 768px) { 
@@ -95,7 +95,7 @@
     color: var(--verdeOscuro);
 }
 .store_text{
-    font-family: 'CarneroRegular';
+    font-family: 'Montserrat';
     font-size: 1.8rem;
     color: var(--verdeOscuro);
     font-weight: 400;
@@ -175,16 +175,17 @@
 }
 
 .btnBuy a{
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    border: 1px solid var(--verdeOscuro);
-    padding: 1.5rem 1rem;
+    font-family: 'CarneroRegular' !important;
+    font-size: 2rem;
+    border: 1px solid #22541a;
+    padding: 1.4rem 1rem 1.1rem 1rem;
     width: 60%;
     border-radius: 20px;
-    color: var(--verdeOscuro);
+    color: #22541a;
     font-weight: 600;
     transition: all 300ms ease;
     background-color:transparent;
+    transition: all 300 ease;
 }
 .btnBuy a:hover{
     background-color: #ece0ee;
@@ -231,10 +232,10 @@
     content: '';
     background-image: url(/img/icons/trama2.png);
     display: block;
-    width: 70%;
+    width: 65%;
     height: 100%;
-    top: 0;
-    right: 6rem;
+    top: 20px;
+    right: 0;
     position: absolute;
     z-index: 0;
 }
@@ -243,16 +244,16 @@
         content: '';
         background-image: url(/img/icons/trama2.png);
         display: block;
-        width: 50%;
+        width: 23%;
         height: 100%;
-        top: 0;
+        top: 20px;
         right: 0;
         position: absolute;
         z-index: 0;
     }
 }
 .welness_img{
-    width: 80%;
+    width: 50%;
     max-width: 380px;
     border-radius: 50%;
     overflow: hidden;
@@ -341,9 +342,9 @@
     .welness_img{
         width: 50%;
         height: 50%;
-        margin-bottom: 25rem;
-        max-width: 244px;
-        max-height: 230px;
+        margin-bottom: 10rem;
+        max-width: 300px;
+        max-height: 283px;
         z-index: 1;
     }
     .welness_img img{
@@ -408,14 +409,14 @@
     text-align: left;
 }
 .especificaciones_info{
-    width: 25%;
+    width: 100%;
     font-family: 'CarneroRegular';
     text-align: left;
     margin: 1rem 1rem;
     padding: 1rem;
 }
 .especificaciones_info h5{
-    font-family: 'CarneroRegular';
+    font-family: 'CarneroSemiBoldItalic';
     font-size: 1.5rem;
     color: var(--verdeOscuro);
     font-weight: 900;
@@ -430,6 +431,7 @@
     padding: 0;
 }
 .wellness-lista li{
+    font-family: 'CarneroRegular';
     width: 100%;
     text-align: left;
     font-size: 1.3rem;
@@ -438,6 +440,7 @@
     
 }
 .especificaciones_info p{
+    font-family: 'CarneroRegular';
     text-align: left;
     font-size: 1.3rem;
     color: var(--secundario);
@@ -454,5 +457,8 @@
         width: 100%;
         justify-content: space-between;
         align-items: flex-start;
+    }
+    .especificaciones_info{
+        width: 25%;
     }
 }

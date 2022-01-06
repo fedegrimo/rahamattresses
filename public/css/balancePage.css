@@ -9,11 +9,13 @@
 }
 /*contenido info modificaciones para page BALANCE*/
 .title-balance{
-    font-family: 'CarneroSemiBold';
+    font-family: 'Montserrat';
+    font-size: 3.2rem;
     text-transform: none;
     letter-spacing: 5px;
-    color:#22541a ;
-    font-weight: 500;
+    color: #22541a;
+    font-weight: 600;
+    font-style: italic;
     
 }
 @media (min-width: 768px) { 
@@ -24,9 +26,12 @@
     }
 }
 .balance_text{
-    font-family: 'CarneroRegular';
-    color: #22541a;
+    font-family: 'Montserrat';
     font-size: 1.8rem;
+    color: var(--verdeOscuro);
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 .btnBuyBalance{
     margin: 6rem 0;
@@ -38,10 +43,9 @@
 }
 .btnBuyBalance a{
     font-family: 'CarneroRegular' !important;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
     border: 1px solid #22541a;
-    padding: 1.5rem 1rem;
+    padding: 1.4rem 1rem 1.1rem 1rem;
     width: 60%;
     border-radius: 20px;
     color: #22541a;

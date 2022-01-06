@@ -29,10 +29,8 @@ function wellnessAction(){
     var  memory = document.querySelector('#btn-memory');
     var  purotex = document.querySelector('#btn-purotex');
     var  adaptative = document.querySelector('#btn-adaptative');
-    var  sanitized = document.querySelector('#btn-sanitized');
     var  tencel = document.querySelector('#btn-tencel');
     memory.classList.add('active');
-    sanitized.classList.add('active');
     purotex.classList.add('active');
     tencel.classList.add('active');
     adaptative.classList.add('active');
