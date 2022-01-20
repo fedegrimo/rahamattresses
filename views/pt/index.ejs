@@ -1,0 +1,268 @@
+    <main class="index">
+        <section class="contenido1">
+
+            <div class="contenido1__test">
+                <div class="contenido1_contenedor">
+                    <h2>Encontre seu colchão ideal</h2>
+                    <a href="#encuesta" class="btn1">Faça o teste</a> 
+                </div>
+            </div>
+
+            <div class="contenido1__black">
+                <h1>BLACK FRIDAY SALE</h1>
+                <h2>Economize até 20%</h2>
+                <a href="#colchones" class="btn1">COMPRE AGORA</a>
+            </div>
+
+        </section>
+
+        <section class="encuenta" id="encuesta">
+            <div class="encuenta__cont1">
+                <div class="cont1_contenido">
+                    <h3>Encontre seu colchão ideal</h3>
+                    <a class="btn2" onclick="validationQuestion()">Procurar</a>  
+                </div>
+                
+            </div>
+
+            <div class="encuesta__cont2">
+                <h3 class="num-relleno numUno">1</h3>
+                <div class="cont2_contenedor">
+                    
+                    <p>Qual é sua posição ao dormir?</p>
+                    <ul>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="wellness" >de costas</a></li>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="balance">lateralmente</a></li>
+                        <li><a onclick="questionOne(event)" class="btn3" data-answer="essential">boca abaixo</a></li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <div class="encuesta__cont2">
+                <h3 class="num-relleno">2</h3>
+                <div class="cont2_contenedor">
+                    <p>Que interrompe seu sono na maioria das vezes?</p>
+                    <ul>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="wellness" >calor</a></li>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="balance">dores</a></li>
+                        <li><a onclick="questionTwo(event)" class="btn3" data-answer="essential">movimiento</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="encuesta__cont2">
+                <h3 class="num-relleno">3</h3>
+                <div class="cont2_contenedor">
+                    <p>Horas de sono?</p>
+                    <ul>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="balance" >6 / 7 horas</a></li>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="essential">8 / 9 horas</a></li>
+                        <li><a onclick="questionThree(event)" class="btn3" data-answer="wellness">10 / 12 horas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="essential" id="colchones">
+
+            <div class="essential_principal">
+                <h3 class="principal__titulo1">essential</h3>
+                <div class="essential_contenedor">
+                    <div class="essential_img">
+                        <img src="/images/sensa_basic.png" alt="">
+                    </div>
+                    <div class="essential_list">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i><span>Memory foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Soft Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>HD Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Tecido de Malha</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Sanitized®</span></li>
+                        </ul>
+                    </div>
+                    <div class="essential_btn">
+                        <a href="/essential/pt" class="btn4 btn4h">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="essential_principal">
+                <h3 class="principal__titulo2">balance</h3>
+                <div class="essential_contenedor">
+                    <div class="essential_img">
+                        <img src="/images/mano_bamboo.png" alt="">
+                    </div>
+                    <div class="essential_list">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i><span>Memory foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Soft Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>HD Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Tecido de Malha</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Adaptive®</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Bamboo®</span></li>
+                        </ul>
+                    </div>
+                    <div class="essential_btn">
+                        <a href="/balance/pt" class="btn4 btn4h">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="essential_principal">
+                <h3 class="principal__titulo3">wellness</h3>
+                <div class="essential_contenedor">
+                    <div class="essential_img">
+                        <img src="/images/mano_premium.png" alt="">
+                    </div>
+                    <div class="essential_list">
+                        <ul>
+                            <li><i class="far fa-check-circle"></i><span>Memory foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Soft Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>HD Foam</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Tencel™</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Adaptive®</span></li>
+                            <li><i class="far fa-check-circle"></i><span>Purotex®</span></li>
+                        </ul>
+                    </div>
+                    <div class="wellness_btn">
+                        <a href="/wellness/pt" class="btn4 btn4h">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="basesEco" id="basesEco">
+            <div class="basesEco_img">
+                <img src="/images/estructura.png">
+            </div>
+            <div class="basesEco_contenido">
+                <div class="contenido_img">
+                    <img src="/images/icons/ecofriendly_verde.png">
+                </div>
+                <div class="contenido_descripcion">
+                    <h3>NOSAS BASES</h3>
+                    <p>Incorporamos bases de papelão que oferecem as mesmas vantagens e suporte de outros tipos de bases. Ao ser ecológicas, contribuem a reduzir significativamente o impacto de nossa produção no meio ambiente.</p>
+                    <a href="#colchones" class="btn5">COMPRE AGORA</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tecnologias">
+            <h3>Nossas Tecnologias</h3>
+            <div class="tecnologias_selector">
+                <ul class="selector">
+                    <li class="item first"><a id="btn-essential" onclick="essentialAction()">essential</a></li>
+                    <li class="item"><a id="btn-balance" onclick="balanceAction()">balance</a></li>
+                    <li class="item"><a id="btn-wellness" onclick="wellnessAction()">wellness</a></li>
+                    <div class="animation start-home"></div>
+                  </ul>
+                 
+            </div>
+
+            <div class="tecnologias_tipos">
+                <div id="btn-memory" class="tipos_items active">
+                    <div class="tipos_img">
+                        <img src="/images/icons/memory-foam-azul-2.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido">
+                        <h4>MEMORY FOAM</h4>
+                        <p>Especialmente desenhada para se adaptar ao corpo. </p>
+                    </div>
+                </div>
+
+                <div id="btn-purotex" class="tipos_items active">
+                    <div class="tipos_img">
+                        <img src="/images/icons/purotex-azul-sin-circulo.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido">
+                        <h4>PUROTEX®</h4>
+                        <p>Reduz a quantidade de alérgenos de ácaros da poeira doméstica em 93,7%!</p>
+                    </div>
+                </div>
+
+                <div id="btn-bamboo" class="tipos_items active">
+                    <div class="tipos_img correccion">
+                        <img src="/images/icons/bamboo_azul-sin-circulo.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido">
+                        <h4>BAMBOO®</h4>
+                        <p>Barreira natural contra bactérias que oferece uma maior absorção de umidade.</p>
+                    </div>
+                </div>
+
+                <div id="btn-adaptative" class="tipos_items active">
+                    <div class="tipos_img">
+                        <img src="/images/icons/adaptive_azul-sin-circulo.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido">
+                        <h4>ADAPTIVE®</h4>
+                        <p>Resposta dinâmica para um ambiente seco e fresco.</p>
+                    </div>
+                </div>
+
+                <div id="btn-sanitized" class="tipos_items active">
+                    <div class="tipos_img correccion">
+                        <img src="/images/icons/sanitized-azul-sin-circulo.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido">
+                        <h4>SANITIZED®</h4>
+                        <p>Previne efetivamente o desenvolvimento e crescimento de bactérias e fungos. Elimina manchas e odores, além de repelir os ácaros.</p>
+                    </div>
+                </div>
+
+                <div id="btn-tencel" class="tipos_items active">
+                    <div class="tipos_img correccion2">
+                        <img src="/images/icons/ecology.png" alt="">
+                    </div>
+
+                    <div class="tipos_contenido ">
+                        <h4>TENCEL™</h4>
+                        <p>Tecido orgânico que proporciona frescor e proteção.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="desafio">
+            <div class="desafio_contenedor">
+                <div class="desafio_contenido">
+                    <h3>NOSSO DESAFIO</h3>
+                    <h4>SEU DESCANSO</h4>
+                    <a href="/about/pt" class="btn1">Conheça RAHA</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="barraIconos">
+            <div class="barraiconos_contenedor">
+
+                <div class="contenedor_item">
+                    <img src="/img/icons/ecofriendly_azul.png" alt="Ecofriendly">
+                    <p class="ecotext">Ecofriendly</p>
+                </div>
+
+                <div class="contenedor_item">
+                    <img src="/img/icons/solucion-inteligente.png" alt="Solucion Inteligente">
+                    <p>Solução <br> Inteligente</p>
+                </div>
+                <div class="contenedor_item">
+                    <img src="/images/icons/mejor_precio.png" alt="Mejor producto">
+                    <p>Melhor Produto pelo Melhor Preço</p>
+                </div>
+                <div class="contenedor_item">
+                    <img src="/images/icons/certificada.png" alt="calidad verificada">
+                    <p>QUALIDADE <br> CERTIFICADA</p>
+                </div>
+            </div>
+        </section>
+    </main>

@@ -149,6 +149,7 @@ ul{
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        text-transform: uppercase;
     }
     .nav_item a,.nav_item a:focus,.nav_item a:visited {
         color: #25597b;

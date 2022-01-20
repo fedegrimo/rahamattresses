@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="<%= language %>">
+<html lang="{{language}}">
     <%- include('./layout/head') %>
-
 <body>
-    <%- include('./layout/header') %>
     <% if (language == 'en') { %>
+        <%- include('./en/header') %>
         <%- include('./en/balance') %>
+        <%- include('./en/footer') %>
     <% } else if (language == 'pt') { %>
+        <%- include('./pt/header') %>
         <%- include('./pt/balance') %>
+        <%- include('./pt/footer') %>
    <% } else { %>
+        <%- include('./es/header') %>
         <%- include('./es/balance') %>
-    <% }  %>
-    
-
-    <%- include('./layout/footer') %>    
+        <%- include('./es/footer') %>  
+    <% }  %>      
 </body>

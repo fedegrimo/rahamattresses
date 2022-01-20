@@ -7,8 +7,9 @@ const traductor = JSON.parse(fs.readFileSync(traductorFilePath, 'utf-8'));
 
 const controller = {
 	index: (req, res) => {
+        language = req.params.id;
         route = "/";
-        res.render('index', {route });
+        res.render('index', {language,route });
 	},
 	wellness: (req, res) => {
         language = req.params.id;
